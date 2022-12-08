@@ -29,6 +29,7 @@ function newElement() {
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
+  li.setAttribute("class","myLi");
   if (inputValue === '') {
     alert("Você deve escrever algo");
   } else {

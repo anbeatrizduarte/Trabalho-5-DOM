@@ -5,31 +5,37 @@
 }
 
 ul {
-    margin: 0;
     padding: 0;
+    text-align: center;
+    
 }
 
-
-ul li {
+.myLi {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
-
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    border: 1px solid black;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
+} 
+
 
 ul li:nth-child(odd) {
     background: #f9f9f9;
+    
 }
 
 ul li:hover {
     background: #ddd;
+    
 }
 
 ul li.checked {
@@ -56,11 +62,14 @@ ul li.checked::before {
     right: 0;
     top: 0;
     padding: 12px 16px 12px 16px;
+    
+    
 }
 
 .close:hover {
     background-color: #f44336;
     color: white;
+    
 }
 
 .header {
@@ -73,6 +82,10 @@ ul li.checked::before {
     font-size: 50px;
     background-image: url(https://library.umaine.edu/wp-content/uploads/sites/77/2020/11/Blue-Overlay-846x290.jpg);
     border-bottom: 4px solid rgb(192, 192, 192);
+}
+
+.header h1 {
+    padding-left: 32px;
 }
 
 
@@ -102,6 +115,7 @@ input {
     float: left;
     font-size: 16px;
     border-radius: 5px;
+    
 }
 
 .addBtn {
@@ -116,6 +130,7 @@ input {
     transition: 0.3s;
     border-radius: 0;
     border-radius: 5px;
+    
 }
 
 .addBtn:hover {
@@ -125,7 +140,7 @@ input {
 .busca {
     padding-bottom: 80px;
     width: 700px;
-    padding-left: 40px;
+    padding-left: 65px;
 }
 
 mark {
