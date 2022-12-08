@@ -42,11 +42,11 @@
   <div class="busca">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/mark.js/7.0.0/jquery.mark.min.js"></script>
-    <input type="text" placeholder="Pesquise seu livro aqui..." style="border: 1px solid black;">
+    <input type="text" id="busca" placeholder="Pesquise seu livro aqui..." style="border: 1px solid black;">
 
     <script>
       $(function () {
-        $("input").on("input.highlight", function () {
+        $("#busca").on("input.highlight", function () {
           // Determine o termo de pesquisa especificado
           var search = $(this).val();
           // Highlight termo de pesquisa dentro de um contexto específico
